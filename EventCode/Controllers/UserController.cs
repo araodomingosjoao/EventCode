@@ -16,10 +16,12 @@ namespace EventCode.Controllers
     public class UserController : Controller
     {
         private readonly IUserRepository _repository;
+        private readonly IConfiguration _configuration;
 
-        public UserController(IUserRepository repository) 
+        public UserController(IUserRepository repository, IConfiguration configuration) 
         {
             _repository = repository;
+            _configuration = configuration;
         }
         [HttpGet("users")]
         public IActionResult Get()
@@ -36,15 +38,17 @@ namespace EventCode.Controllers
         [HttpPost("user")]
         public IActionResult Post(User user)
         {
+
             _repository.Create(user);
+            var user_url = _configuration.GetValue<string>("APP:APP_URL") + user.Id;
+            EmailService email = new EmailService("teste@antonioyosica.com", "Teste#1", "smtp.titan.email", 587);
+            var e = email.Send("hernanysimao123@gmail.com", "Confirme a sua Presença", user_url);
 
             QRCoderService qrCoderService = new QRCoderService();
-            Bitmap qrCodeImage = qrCoderService.Generator("https://localhost:44355/user/", user.Id);
+            Bitmap qrCodeImage = qrCoderService.Generator(_configuration.GetValue<string>("APP:APP_URL"), user.Id);
 
-            // Converta o objeto Bitmap em um objeto Stream
-            MemoryStream ms = new MemoryStream();
-            qrCodeImage.Save(ms, System.Drawing.Imaging.ImageFormat.Png);
-            ms.Position = 0;
+            //// Converta o objeto Bitmap em um objeto Stream
+            var ms = qrCoderService.ToStream(qrCodeImage);
 
             return _repository.SaveChanges()
                 ? Ok(ms)

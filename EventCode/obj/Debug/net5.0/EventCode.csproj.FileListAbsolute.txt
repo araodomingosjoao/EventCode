@@ -44,3 +44,16 @@ C:\Users\estagiariodf\Documents\Projectos\EventCode\EventCode\bin\Debug\net5.0\Q
 C:\Users\estagiariodf\Documents\Projectos\EventCode\EventCode\bin\Debug\net5.0\System.Drawing.Common.dll
 C:\Users\estagiariodf\Documents\Projectos\EventCode\EventCode\bin\Debug\net5.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
 C:\Users\estagiariodf\Documents\Projectos\EventCode\EventCode\bin\Debug\net5.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\estagiariodf\Documents\Projectos\EventCode\EventCode\bin\Debug\net5.0\Newtonsoft.Json.dll
+C:\Users\estagiariodf\Documents\Projectos\EventCode\EventCode\bin\Debug\net5.0\SendGrid.dll
+C:\Users\estagiariodf\Documents\Projectos\EventCode\EventCode\bin\Debug\net5.0\SendGrid.SmtpApi.dll
+C:\Users\estagiariodf\Documents\Projectos\EventCode\EventCode\bin\Debug\net5.0\StarkbankEcdsa.dll
+C:\Users\estagiariodf\Documents\Projectos\EventCode\EventCode\bin\Debug\net5.0\MailKit.dll
+C:\Users\estagiariodf\Documents\Projectos\EventCode\EventCode\bin\Debug\net5.0\MimeKit.dll
+C:\Users\estagiariodf\Documents\Projectos\EventCode\EventCode\bin\Debug\net5.0\BouncyCastle.Crypto.dll
+C:\Users\estagiariodf\Documents\Projectos\EventCode\EventCode\bin\Debug\net5.0\System.Formats.Asn1.dll
+C:\Users\estagiariodf\Documents\Projectos\EventCode\EventCode\bin\Debug\net5.0\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\estagiariodf\Documents\Projectos\EventCode\EventCode\bin\Debug\net5.0\System.Security.Cryptography.Pkcs.dll
+C:\Users\estagiariodf\Documents\Projectos\EventCode\EventCode\bin\Debug\net5.0\System.Text.Encoding.CodePages.dll
+C:\Users\estagiariodf\Documents\Projectos\EventCode\EventCode\bin\Debug\net5.0\runtimes\win\lib\netcoreapp3.1\System.Security.Cryptography.Pkcs.dll
+C:\Users\estagiariodf\Documents\Projectos\EventCode\EventCode\bin\Debug\net5.0\runtimes\win\lib\netcoreapp3.1\System.Text.Encoding.CodePages.dll

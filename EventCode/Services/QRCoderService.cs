@@ -20,5 +20,13 @@ namespace EventCode.Services
 
             return qrCodeImage;
         }
+
+        public Stream ToStream(Bitmap qrcode)
+        {
+            MemoryStream ms = new MemoryStream();
+            qrcode.Save(ms, System.Drawing.Imaging.ImageFormat.Png);
+            ms.Position = 0;
+            return ms;
+        }
     }
 }
